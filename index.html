@@ -293,6 +293,36 @@
     color:var(--gold-light); opacity:0.85;
   }
 
+  /* ---------- VIDEO SECTION ---------- */
+  .video-section{
+    background: var(--ivory);
+    padding: 80px 24px 100px;
+    text-align: center;
+  }
+  .video-container{
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 20px 45px -15px rgba(62,17,25,0.35);
+    border: 6px solid #fff;
+    background: #000;
+  }
+  .video-container video{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .video-note{
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.35rem;
+    color: var(--burgundy);
+    max-width: 580px;
+    margin: 28px auto 0;
+    line-height: 1.6;
+  }
+
   /* ---------- LIGHTBOX ---------- */
   .lightbox{
     position:fixed; inset:0; background:rgba(20,8,11,0.92);
@@ -479,6 +509,20 @@
       </figure>
     </div>
   </div>
+</section>
+
+<section class="video-section">
+  <div class="interlude" style="margin-bottom: 40px;">
+    <span class="interlude-label">A Special Moment</span>
+    <h3>In Motion</h3>
+  </div>
+  <div class="video-container">
+    <video controls poster="images/car_selfie.jpg">
+      <source src="images/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <p class="video-note">"Holding your hand is my favorite place to be. Of all the paths we walk, every single one is better when we're walking it together."</p>
 </section>
 
 <footer>
